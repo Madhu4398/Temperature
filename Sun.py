@@ -45,14 +45,14 @@ add_button.click()
 add_to_cart_button=browser.find_element_by_xpath('//button[@class="thin-text nav-link"]')
 add_to_cart_button.click()
 
-time.sleep(3)
+time.sleep(4)
 
 # Check if the final cart total is equal to the highest prize and print pass or fail
 
 final_prize=int(browser.find_element_by_xpath('//div[@class="row justify-content-center top-space-50"]//td[2]').text)
 print("Prize in cart is ",final_prize)
 if final_prize==highest_prize:
-    print("Pass")
+    print("Highest Price")
 else:
-    print("Fail")
+    print("not the highest")
 browser.close()
