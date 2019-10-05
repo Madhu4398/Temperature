@@ -30,7 +30,7 @@ def check_title(product,page_title):
     if product==page_title:
        print("Landed on the product %s page"%product)
     else:
-        print("Can't landed the page")
+        print("Could not land the correct page")
 if temperature<19:
 # KEY POINT: Locate the button and click on it 
     product="Moisturizers"
@@ -48,6 +48,5 @@ elif temperature>34:
     check_title(product,sunscreens_page)
 # Pause the script to wait for page elements to load
 time.sleep(3)
-
 # Close the browser
 driver.close()
