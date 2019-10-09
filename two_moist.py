@@ -10,7 +10,6 @@ SCOPE:
 7) Close the browser
 
 """
-
 from selenium import webdriver
 import time
 
@@ -18,7 +17,7 @@ import time
 browser = webdriver.Chrome()
 browser.get('https://weathershopper.pythonanywhere.com/moisturizer')
 
-# Checking if the control lands on the right web page 
+# Checking if the control lands on the correct web page 
 if browser.title=="The best moisturizers in the world!":
    print("Page found")
    
